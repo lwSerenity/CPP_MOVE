@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/lzj/cpp_move/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/customer.dir/customer1.cpp.o -c /home/lzj/cpp_move/customer1.cpp",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/cusotmer1.dir/customer1.cpp.o -c /home/lzj/cpp_move/customer1.cpp",
   "file": "/home/lzj/cpp_move/customer1.cpp"
 }
 ]

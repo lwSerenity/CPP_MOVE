@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named customer
+# Target rules for targets named cusotmer1
 
 # Build rule for target.
-customer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 customer
-.PHONY : customer
+cusotmer1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cusotmer1
+.PHONY : cusotmer1
 
 # fast build rule for target.
-customer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/build
-.PHONY : customer/fast
+cusotmer1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/build
+.PHONY : cusotmer1/fast
 
 customer1.o: customer1.cpp.o
 .PHONY : customer1.o
 
 # target to build an object file
 customer1.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/customer1.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/customer1.cpp.o
 .PHONY : customer1.cpp.o
 
 customer1.i: customer1.cpp.i
@@ -142,7 +142,7 @@ customer1.i: customer1.cpp.i
 
 # target to preprocess a source file
 customer1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/customer1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/customer1.cpp.i
 .PHONY : customer1.cpp.i
 
 customer1.s: customer1.cpp.s
@@ -150,7 +150,7 @@ customer1.s: customer1.cpp.s
 
 # target to generate assembly for a file
 customer1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/customer1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/customer1.cpp.s
 .PHONY : customer1.cpp.s
 
 # Help Target
@@ -161,7 +161,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... customer"
+	@echo "... cusotmer1"
 	@echo "... customer1.o"
 	@echo "... customer1.i"
 	@echo "... customer1.s"

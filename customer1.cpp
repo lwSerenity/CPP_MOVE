@@ -1,11 +1,14 @@
 #include "customer.hpp"
 #include <iostream>
+#include <type_traits>
 #include <utility>
+#include <vector>
 
 class Person {
 public:
   std::string first;
   std::string last;
+  std::string name;
 
 public:
   Person(std::string f, std::string l)
@@ -18,6 +21,7 @@ int main() {
   Person p1(std::move(name1), a);
   std::cout << p1.first << " " << p1.last << std::endl;
   std::cout << name1 << " " << name2 << std::endl;
+  std::vector<std::string> result;
 
   return 0;
 }

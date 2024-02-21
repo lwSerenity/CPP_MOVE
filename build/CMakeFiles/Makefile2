@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/lzj/cpp_move/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/customer.dir/all
+all: CMakeFiles/cusotmer1.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/customer.dir/clean
+clean: CMakeFiles/cusotmer1.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/customer.dir
+# Target rules for target CMakeFiles/cusotmer1.dir
 
 # All Build rule for target.
-CMakeFiles/customer.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lzj/cpp_move/build/CMakeFiles --progress-num=1,2 "Built target customer"
-.PHONY : CMakeFiles/customer.dir/all
+CMakeFiles/cusotmer1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lzj/cpp_move/build/CMakeFiles --progress-num=1,2 "Built target cusotmer1"
+.PHONY : CMakeFiles/cusotmer1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/customer.dir/rule: cmake_check_build_system
+CMakeFiles/cusotmer1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lzj/cpp_move/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/customer.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cusotmer1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lzj/cpp_move/build/CMakeFiles 0
-.PHONY : CMakeFiles/customer.dir/rule
+.PHONY : CMakeFiles/cusotmer1.dir/rule
 
 # Convenience name for target.
-customer: CMakeFiles/customer.dir/rule
-.PHONY : customer
+cusotmer1: CMakeFiles/cusotmer1.dir/rule
+.PHONY : cusotmer1
 
 # clean rule for target.
-CMakeFiles/customer.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/customer.dir/build.make CMakeFiles/customer.dir/clean
-.PHONY : CMakeFiles/customer.dir/clean
+CMakeFiles/cusotmer1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cusotmer1.dir/build.make CMakeFiles/cusotmer1.dir/clean
+.PHONY : CMakeFiles/cusotmer1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
