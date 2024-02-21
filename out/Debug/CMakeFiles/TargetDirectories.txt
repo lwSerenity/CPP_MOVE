@@ -1,0 +1,3 @@
+/home/lzj/cpp_move/out/Debug/CMakeFiles/cusotmer1.dir
+/home/lzj/cpp_move/out/Debug/CMakeFiles/edit_cache.dir
+/home/lzj/cpp_move/out/Debug/CMakeFiles/rebuild_cache.dir

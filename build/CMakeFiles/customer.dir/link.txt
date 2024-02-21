@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/customer.dir/customer1.cpp.o -o customer 
