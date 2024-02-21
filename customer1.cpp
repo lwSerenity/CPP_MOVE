@@ -1,32 +1,23 @@
 #include "customer.hpp"
-#include <algorithm>
-#include <cstddef>
 #include <iostream>
-#include <memory>
-#include <random>
 #include <utility>
 
-#define LEVEL_DB
-class LEVEL_DB A {};
 class Person {
 public:
-  std::string name1 = "1";
-  std::string name2 = "2";
-  Person() = default;
-  Person(const Person &) { std::cout << "copy" << std::endl; }
-  /* Person(Person &&) noexcept { std::cout << "move" << std::endl; } */
-  Person &operator=(Person &&) = default;
+  std::string first;
+  std::string last;
+
+public:
+  Person(std::string f, std::string l)
+      : first{std::move(f)}, last{std::move(l)} {}
 };
 int main() {
+  std::string &&a = "123";
+  std::string b = a;
+  std::string name1 = "back", name2 = "cook";
+  Person p1(std::move(name1), a);
+  std::cout << p1.first << " " << p1.last << std::endl;
+  std::cout << name1 << " " << name2 << std::endl;
 
-  auto c1 = std::unique_ptr<Person>();
-  auto c2 = std::unique_ptr<Person>();
-  auto x = [](auto &a, auto &b) { return a + b; };
-
-  auto pw = std::make_unique<Person>();
-  auto func = [pw = std::move(pw)] { return pw->name1; };
-  auto func1 = [pw = std::unique_ptr<Person>()] { return pw->name2; };
-  std::cout << func() << std::endl;
-  std::cout << "-----------------" << std::endl;
-  std::cout << pw->name2 << std::endl;
+  return 0;
 }
