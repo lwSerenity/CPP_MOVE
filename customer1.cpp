@@ -8,20 +8,32 @@ class Person {
 public:
   std::string first;
   std::string last;
-  std::string name;
+  std::string name = "lz";
 
 public:
   Person(std::string f, std::string l)
       : first{std::move(f)}, last{std::move(l)} {}
+  std::string getname() && { return std::move(name); }
+  const std::string &getname() const & { return name; }
 };
-enum class Volume { Normal, Loud, LoudPlus };
 
+class C {
+public:
+  void foo() const & { std::cout << "foo() const&\n"; }
+  void foo() && { std::cout << "foo() &&\n"; }
+  void foo() & { std::cout << "foo()&\n"; };
+  void foo() const && { std::cout << "foo() const&&\n"; }
+};
 int main() {
-  enum class Color { balck, white, red };
-  if (Color::red != Color::white) {
-    std::cout << "Red is white" << std::endl;
-  }
-  auto p = int(20);
-  std::cout << p << std::endl;
+  C x;
+  x.foo();
+  C{}.foo();
+  std::move(x).foo();
+
+  const C cx;
+  cx.foo();
+  std::move(cx).foo();
+  std::string getString();
+
   return 0;
 }
