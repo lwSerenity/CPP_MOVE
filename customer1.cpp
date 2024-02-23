@@ -14,14 +14,14 @@ public:
   Person(std::string f, std::string l)
       : first{std::move(f)}, last{std::move(l)} {}
 };
-int main() {
-  std::string &&a = "123";
-  std::string b = a;
-  std::string name1 = "back", name2 = "cook";
-  Person p1(std::move(name1), a);
-  std::cout << p1.first << " " << p1.last << std::endl;
-  std::cout << name1 << " " << name2 << std::endl;
-  std::vector<std::string> result;
+enum class Volume { Normal, Loud, LoudPlus };
 
+int main() {
+  enum class Color { balck, white, red };
+  if (Color::red != Color::white) {
+    std::cout << "Red is white" << std::endl;
+  }
+  auto p = int(20);
+  std::cout << p << std::endl;
   return 0;
 }

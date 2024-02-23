@@ -3,8 +3,6 @@
 #include <string>
 #include <vector>
 
-int add(int a, int b) { return a + b; }
-
 class Customer {
 private:
   std::string name{};
